@@ -1,0 +1,41 @@
+.edit_icon,
+.delete_icon {
+  cursor: pointer;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @media screen and (min-width: 600px) {
+    width: 15%;
+  }
+}
+
+.delete_wrapper {
+  display: flex;
+  gap: 10px;
+}

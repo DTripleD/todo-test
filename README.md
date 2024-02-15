@@ -1,8 +1,25 @@
-# React + Vite
+<h1 align="center">Test Task ToDO</h1>
+<h2 align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Запуск проекта
 
-Currently, two official plugins are available:
+1. Для запуска проекта скопируйте его в удобный для вас редактор кода.
+2. В консоле пропишите "npm i" для установления зависимостей.
+3. Пропишите в консоле "npm run dev" для запуска локального сервера.
+4. Перейдите по ссылке "http://localhost:5173/todo-test".
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Готово!
+
+## Библиотеки, использованые для написания проекта:
+
+- Проект собран с помощью [Vite + React](https://github.com/vitejs/vite)
+- [Fortawesome](https://fortawesome.com/)
+- [date-fns](https://date-fns.org/)
+- [react-day-picker](https://react-day-picker.js.org/)
+- [uuid](https://www.npmjs.com/package/uuid)
+- HTML
+- CSS modules
+
+## Live page
+
+Живая страница доступна по ссылке [https://dtripled.github.io/project-drink-master/](https://dtripled.github.io/project-drink-master/)

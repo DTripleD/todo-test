@@ -3,23 +3,33 @@ import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import PropTypes from "prop-types";
 
+import css from "./Todo.module.css";
+
 export const Todo = ({ task, deleteTodo, editTodo, toggleComplete }) => {
   return (
-    <div className="Todo">
-      <p
-        className={`${task.completed ? "completed" : "incompleted"}`}
-        onClick={() => toggleComplete(task.id)}
-      >
-        {task.task}
+    <div className={css.todo}>
+      <p className={css.incompleted} onClick={() => toggleComplete(task.id)}>
+        {task.job}
       </p>
-      <div>
+
+      <p className={css.incompleted} onClick={() => toggleComplete(task.id)}>
+        {task.descr}
+      </p>
+      <p className={css.incompleted} onClick={() => toggleComplete(task.id)}>
+        {task.user}
+      </p>
+      <p className={css.incompleted} onClick={() => toggleComplete(task.id)}>
+        {task.date}
+      </p>
+      <p className={css.incompleted}>{task.status}</p>
+      <div className={css.delete_wrapper}>
         <FontAwesomeIcon
-          className="edit-icon"
+          className={css.edit_icon}
           icon={faPenToSquare}
           onClick={() => editTodo(task.id)}
         />
         <FontAwesomeIcon
-          className="delete-icon"
+          className={css.delete_icon}
           icon={faTrash}
           onClick={() => deleteTodo(task.id)}
         />
