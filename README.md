@@ -1,5 +1,4 @@
 <h1 align="center">Test Task ToDO</h1>
-<h2 align="center">
 
 ## Запуск проекта
 
@@ -22,4 +21,4 @@
 
 ## Live page
 
-Живая страница доступна по ссылке [https://dtripled.github.io/project-drink-master/](https://dtripled.github.io/project-drink-master/)
+Живая страница доступна по ссылке [https://dtripled.github.io/todo-test/](https://dtripled.github.io/todo-test/)
