@@ -11,7 +11,7 @@ const ProgressSelect = ({ status, setStatus, type = "" }) => {
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (!statusHidden && !e.target.closest("#time-wrapper")) {
+      if (!statusHidden && !e.target.closest("#select-wrapper")) {
         setStatusHidden(true);
       }
     };
@@ -25,7 +25,7 @@ const ProgressSelect = ({ status, setStatus, type = "" }) => {
 
   return (
     <div
-      id="time-wrapper"
+      id="select-wrapper"
       className={css.time_wrapper}
       onClick={() => setStatusHidden((prev) => !prev)}
     >

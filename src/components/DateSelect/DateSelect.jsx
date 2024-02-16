@@ -8,12 +8,12 @@ import PropTypes from "prop-types";
 
 import css from "./DateSelect.module.css";
 
-const DateSelect = ({ date, setDate, type = "" }) => {
+const DateSelect = ({ date, setDate, type = "", id }) => {
   const [hidden, setHidden] = useState(true);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (!hidden && !e.target.closest("#time-wrapper")) {
+      if (!hidden && !e.target.closest(`#${id}`)) {
         setHidden(true);
       }
     };
@@ -23,15 +23,14 @@ const DateSelect = ({ date, setDate, type = "" }) => {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [hidden]);
+  }, [hidden, id]);
 
   return (
-    <div
-      id="time-wrapper"
-      className={css.time_wrapper}
-      onClick={() => setHidden((prev) => !prev)}
-    >
-      <div className={css.custom_select}>
+    <div id={id} className={css.time_wrapper}>
+      <div
+        className={css.custom_select}
+        onClick={() => setHidden((prev) => !prev)}
+      >
         <p>{date || "Крайний срок сдачи"}</p>
         <FontAwesomeIcon
           className={`${hidden ? `${css.show_icon} ${css.up}` : css.show_icon}`}
@@ -62,4 +61,5 @@ DateSelect.propTypes = {
   date: PropTypes.string,
   setDate: PropTypes.func,
   type: PropTypes.string,
+  id: PropTypes.string,
 };

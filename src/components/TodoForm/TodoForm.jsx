@@ -52,7 +52,7 @@ export const TodoForm = ({ addTodo }) => {
         placeholder="Имя владельца задачи"
         required
       />
-      <DateSelect date={date} setDate={setDate} />
+      <DateSelect date={date} setDate={setDate} id="time-wrapper" />
 
       <button type="submit" className={css.todo_btn}>
         Добавить

@@ -43,6 +43,7 @@ export const TodoFilter = ({
         date={searchParams.date}
         setDate={setSearchParams}
         type="filter"
+        id="time-wrapper-filter"
       />
       <ProgressSelect
         status={searchParams.status}

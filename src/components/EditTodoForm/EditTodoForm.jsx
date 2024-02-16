@@ -41,7 +41,7 @@ export const EditTodoForm = ({ editTodo, task }) => {
         className={css.todo_input}
         placeholder="Update task"
       />
-      <DateSelect date={date} setDate={setDate} />
+      <DateSelect date={date} setDate={setDate} id="time-wrapper-edit" />
 
       <ProgressSelect status={status} setStatus={setStatus} />
 
